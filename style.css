@@ -1,0 +1,142 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+header nav{
+    display: flex;
+    gap:1rem;
+
+}
+
+.search-profile {
+    display: flex;
+    gap:0.5rem;
+    align-items: center;
+
+}
+.input-icon{
+    margin-left: -30px; /*input iconu search bar icine alindi */
+}
+.search-profile img{
+    border-radius: 50%;
+}
+
+.age{
+  border:1px solid black;  
+  padding:0;
+}
+.info-label{
+    font-weight: bold;
+    color: red;
+}
+.play-button{
+    background-color: red;
+    color:white;
+    padding:0.5rem 0.8rem;
+    border-radius: 5px;
+    margin-left: 15px;
+    
+
+}
+.featured-movie{
+ border: 1px solid black;
+ padding:1rem;
+ background-image: url('wp.jpg'); /*Featured movie background resmi eklentisi*/
+ background-size: cover;
+ background-repeat: no-repeat;
+
+}
+
+.description {
+   margin-top: 1rem;
+    margin-bottom: 15px;
+    max-width: 900px; /*featured description un tum satiri kaplanmasi engellendi */
+  }
+
+
+.section-header {
+  display: flex;
+  justify-content: space-between;  
+
+}
+.section-title{
+    font-size:1rem;
+    font-weight: bold;
+    padding-top: 5px;
+
+}
+.view-all{
+    color:black;
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+.movie-list {
+    display: flex;
+    gap:1rem;
+    overflow-x:auto; /*scrool bar olusturuldu*/
+    justify-content: space-between;
+    
+}
+.movie-item{
+
+    padding: 20px;
+    width: calc(33.33% - 14px);
+    border: 1px solid black;
+    flex: 0 0 auto;
+
+}
+
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+ 
+
+  }
+  .footer-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+
+  }
+  
+  .footer-links {
+    width: 70%;
+    padding-right: 20px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 15px;
+  }
+  
+ 
+  .follow-us div, 
+  .apps div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+ 
+
+  
+  .follow-us a {
+   text-decoration: none;
+   font-size:large;
+   margin-right: 10px; /*follow us ikonlari arasi bosluk birakildi.*/
+
+  }
+  
+
+ .apps a {
+
+    margin-right: 10px; /*app ikonlari arasi bosluk birakildi.*/
+    font-size: large;
+}
