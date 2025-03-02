@@ -8,6 +8,7 @@ header{
     justify-content: space-between;
     align-items: center;
 
+
     
 }
 header nav{
@@ -16,10 +17,21 @@ header nav{
   
 
 }
+
 header nav a{
   text-decoration: none;
   color: black;
 }
+
+header nav a:hover{
+  color:red;
+  cursor: pointer;
+}
+
+i.hamburger{
+  display: none;
+}
+
 .search-profile {
     display: flex;
     gap:0.5rem;
@@ -155,6 +167,10 @@ footer {
     margin-right: 10px; /*app ikonlari arasi bosluk birakildi.*/
     font-size: x-large;
 }
+.footer-links a:hover{
+  color:red;
+  cursor:pointer;
+}
 
 @media(max-width:600px){
 
@@ -164,20 +180,32 @@ footer {
   }
 
   header nav{
+   
     width: 100%;
     order: 1;
     margin: 0 auto 1rem;
     justify-content: center;
 
   }
+  
   footer {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;;
-    flex-direction: column;
-    align-items: center;
-
+  justify-content: space-between;
+   
   
-
+  }
+  .footer-links  {
+    width: 100%;
+  }
+  .search-profile{
+    display: none;
+  }
+  i.hamburger{
+    display: block;
+    font-size: 1.5rem;
+  }
+  i.hamburger:hover{
+   color: red;
   }
 }
